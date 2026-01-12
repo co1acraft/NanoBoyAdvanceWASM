@@ -5,10 +5,17 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 option(PLATFORM_QT "Build Qt frontend." ON)
+option(PLATFORM_WASM "Build WebAssembly frontend." OFF)
 
 add_subdirectory(src/nba)
-add_subdirectory(src/platform/core)
 
-if (PLATFORM_QT)
-  add_subdirectory(src/platform/qt ${CMAKE_CURRENT_BINARY_DIR}/bin/qt/)
+if(PLATFORM_WASM)
+  # WASM build - only build core and WASM platform
+  add_subdirectory(src/platform/wasm)
+else()
+  # Native build
+  add_subdirectory(src/platform/core)
+  if (PLATFORM_QT)
+    add_subdirectory(src/platform/qt ${CMAKE_CURRENT_BINARY_DIR}/bin/qt/)
+  endif()
 endif()
