@@ -3,9 +3,10 @@
 [![license](https://img.shields.io/github/license/nba-emu/NanoBoyAdvance)](https://github.com/nba-emu/NanoBoyAdvance/blob/master/LICENSE)
 [![build](https://img.shields.io/github/actions/workflow/status/nba-emu/NanoBoyAdvance/build.yml?branch=master)](https://github.com/nba-emu/NanoBoyAdvance/actions/workflows/build.yml)
 [![discord](https://img.shields.io/discord/969218483873251338?logo=discord&label=discord)](https://discord.gg/4NnUjsf7Am)
+> [!WARNING]
+> NanoBoyAdvanceWASM is a wasm port that i vibe coded the crap out of and somehow works<br>
+> so uh be aware of that<br>
 
-NanoBoyAdvanceWASM is a wasm port that i vibe coded the crap out of and somehow works<br>
-so uh be aware of that<br>
 
 ## Features
 - Very high compatibility and accuracy (see [Accuracy](#accuracy))
